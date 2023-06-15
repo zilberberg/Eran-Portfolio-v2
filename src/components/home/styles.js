@@ -30,13 +30,10 @@ export const HomeSubHeader = styled.div`
     position: relative;
 `
 
-export const WaveBackgroundWrapper = styled.div`
-    background-image: url(${WaveBG});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+export const WaveBackgroundWrapper = styled.img.attrs((props) => ({
+    src: WaveBG
+}))`
     width: 100%;
-    height: 770px;
     position: absolute;
     top: 0;
 `
@@ -51,4 +48,10 @@ export const LaptopWrapper = styled.div`
     position: absolute;
     right: 250px;
     top: 300px;
+    animation: bounce 2s ease infinite;
+
+    @keyframes bounce {
+        0%, 100% {bottom: 0;}
+        50% {{transform: translateY(-5%);}}
+    }
 `

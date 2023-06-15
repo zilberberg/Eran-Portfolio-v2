@@ -26,6 +26,10 @@ const normalize = css`
 
     a {
         background-color: transparent;
+        :active { text-decoration: none; }
+        :visited { text-decoration: none; }
+        :link { text-decoration: none; }
+        :hover { text-decoration: none; }
     }
 
     abbr[title] {

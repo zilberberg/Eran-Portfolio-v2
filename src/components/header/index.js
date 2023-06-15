@@ -1,6 +1,6 @@
 import React from "react"
 import Navigation from "../nav"
-import { BackgroundWrapper, HeaderContentWrapper, HeaderWrapper, ImageWrapper, NameWrapper } from "./styles"
+import { BackgroundWrapper, HeaderContentWrapper, HeaderWrapper, ImageWrapper } from "./styles"
 
 const Header = () => (
     <HeaderWrapper>

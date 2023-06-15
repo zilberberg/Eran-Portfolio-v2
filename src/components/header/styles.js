@@ -14,7 +14,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderContentWrapper = styled.div`
     display: flex;
     width: 100%;
-    padding: 0px 160px;
+    padding: 0px 250px;
     align-items: center;
 `
 
@@ -28,20 +28,11 @@ export const ImageWrapper = styled.div`
     z-index: 100;
 `
 
-export const NameWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    font-size: ${props => props.theme.size.extraLarge};
-    padding-left: 20px;
-`
-
-export const BackgroundWrapper = styled.div`
-    background-image: url(${Background});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+export const BackgroundWrapper = styled.img.attrs((props) => ({
+    src: Background
+}))`
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: absolute;
     top: 0;
 `

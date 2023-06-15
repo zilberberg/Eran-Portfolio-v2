@@ -7,6 +7,8 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import About from "../components/about";
 import Skills from "../components/skills";
+import Experience from "../components/experience";
+import Footer from "../components/footer";
 
 const Index = () => {
     return (
@@ -21,12 +23,16 @@ const Index = () => {
             <Element name="skills">
                 <Skills/>
             </Element>
+            <Element name="experience">
+                <Experience/>
+            </Element>
             <Element name="projects">
                 <Projects/>
             </Element>
             <Element name="contact">
                 <Contact/>
             </Element>
+            <Footer/>
         </Layout>
     )
 }

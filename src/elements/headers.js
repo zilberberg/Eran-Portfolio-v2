@@ -16,6 +16,7 @@ export const Info = styled.div`
     font-size: ${props => props.theme.size.large};
     font-weight: ${props => props.theme.weight.medium};
     display: block;
+    line-height: 40px;
 `
 
 export const TitleWrapper = styled.div`

@@ -1,14 +1,14 @@
 import React from "react"
 import { SectionContent, SectionWrapper, TitleComponent } from "../../elements";
 
-const Projects = () => (
+const Experience = () => (
     <SectionWrapper>
         <SectionContent>
             <TitleComponent>
-                projects
+                work experience
             </TitleComponent>
         </SectionContent>
     </SectionWrapper>
 )
 
-export default Projects;
+export default Experience;

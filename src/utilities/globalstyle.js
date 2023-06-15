@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
         .active {
              >div {
                 border-bottom: 2px solid;
+                font-weight: 600;
             }
         }
     }

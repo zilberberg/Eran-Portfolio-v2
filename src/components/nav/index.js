@@ -1,6 +1,8 @@
 import React from "react"
-import { NavWrapper, NavItems, NavLink } from "./styles"
+import { NavWrapper, NavItems, NavLink, AnchorWrapper } from "./styles"
 import { Link } from "react-scroll"
+import cvPDF from '../../utilities/Eran-Zilberberg-CV.pdf';
+import theme from "../../config/theme";
 
 const Navigation = () => (
     <NavWrapper>
@@ -41,11 +43,11 @@ const Navigation = () => (
                 </NavLink>
             </Link>
 
-            <Link activeClass="active" to="resume" spy={true} smooth={true}>
-                <NavLink>
+            <AnchorWrapper href={cvPDF} target={"_blank"}>
+                <NavLink color={theme.colors.dark}>
                     Resume
                 </NavLink>
-            </Link>
+            </AnchorWrapper>
         </NavItems>
     </NavWrapper>
 )

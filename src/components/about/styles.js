@@ -7,11 +7,6 @@ export const AboutWrapper = styled.div`
     justify-content: space-between;
 `
 
-export const BoxWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`
-
 export const ProfileImageContainer = styled.div`
     display: flex;
     flex-direction: row;

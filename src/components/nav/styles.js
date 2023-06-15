@@ -19,7 +19,16 @@ export const NavItems = styled.nav`
 `
 
 export const NavLink = styled.div`
-    color: ${props => props.theme.colors.light};
+    color: ${props => props.color || props.theme.colors.light};
     font-weight: 400;
     cursor: pointer;    
+`
+
+export const AnchorWrapper = styled.a.attrs((props) => ({
+    href: props.href,
+    target: props.target
+}))`
+    background-color: ${props => props.theme.colors.light};
+    padding: 4px 10px;
+    border-radius: 22px;
 `
