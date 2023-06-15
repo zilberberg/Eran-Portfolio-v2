@@ -3,14 +3,31 @@ import styled from "styled-components"
 export const SectionWrapper = styled.div`
     min-height: 100vh;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     display: flex;
     background-color: ${props => props.backgroundColor || "white"};
-    padding: 200px 0px;
+`
+
+export const SectionContent = styled.div`
+    min-height: 100vh;
+    padding: 200px 150px;
+    display: flex;
+    flex-direction: column;
+`
+
+export const InfoSectionContent = styled.div`
+    min-height: 100vh;
+    padding: 200px 150px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 `
 
 export const InfoSection = styled.div`
-    padding: 30px;
-    width: 600px;
+    padding: 60px 0px;
+    width: 50%;
+`
+
+export const Row = styled.div`
+    display: flex;
 `

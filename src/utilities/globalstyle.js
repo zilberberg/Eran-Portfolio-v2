@@ -14,9 +14,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Montserrat';
+        font-weight: 400;
 
         .active {
              >div {

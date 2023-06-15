@@ -1,16 +1,26 @@
 import React from "react"
-import { Header, SectionWrapper } from "../../elements";
-import { HeaderInfo } from "./styles";
+import theme from "../../config/theme";
+import { Row, SectionContent, SectionWrapper } from "../../elements";
+import { HomeHeader, HomeSubHeader, LaptopWrapper, WaveBackgroundWrapper } from "./styles";
 
 const Home = () => (
     <SectionWrapper>
-        <Header>
-            HEY, I'm ERAN ZILBERBERG
-        </Header>
-        <HeaderInfo>
-        Welcome to my Portfolio Website! {'\n'} I'm Eran Zilberberg, a passionate software engineer specializing in full stack development. {'\n'}
-        Explore my projects and discover my expertise. Let's connect and bring innovative ideas to life!
-        </HeaderInfo>
+        <WaveBackgroundWrapper/>
+        <LaptopWrapper/>
+        <SectionContent>
+            <HomeHeader>
+            Hi, my name is {'\n'}
+            Eran Zilberberg
+            </HomeHeader>
+            <Row>
+                <HomeSubHeader color={theme.colors.dark}>
+                and I’m a
+                </HomeSubHeader>
+                <HomeSubHeader color={theme.colors.light}>
+                &nbsp;software engineer.
+                </HomeSubHeader>
+            </Row>
+        </SectionContent>
     </SectionWrapper>
 )
 

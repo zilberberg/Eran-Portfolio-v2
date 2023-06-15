@@ -1,9 +1,8 @@
 const colors = {
-    light: "#F1F6F9",
-    lightBlue: "#DBDFEA",
-    blue: "#394867",
-    darkBlue: "#212A3E",
-    darkGrey: "#9BA4B5",
+    light: "#FAFAFA",
+    purple: "#8349ED",
+    dark: "#222222",
+    pink: "#EE4D79",
 }
 
 const size = {
@@ -12,7 +11,7 @@ const size = {
     large: "20px",
     extraLarge: "30px",
     semiHuge: "40px",
-    huge: "60px",
+    huge: "100px",
 }
 
 const weight = {

@@ -1,14 +1,14 @@
 import React from "react"
 import Navigation from "../nav"
-import { HeaderWrapper, ImageWrapper, NameWrapper } from "./styles"
+import { BackgroundWrapper, HeaderContentWrapper, HeaderWrapper, ImageWrapper, NameWrapper } from "./styles"
 
 const Header = () => (
     <HeaderWrapper>
-        <ImageWrapper/>
-        <NameWrapper>
-            Eran Zilberberg
-        </NameWrapper>
-        <Navigation/>
+        <BackgroundWrapper/>
+        <HeaderContentWrapper>
+            <ImageWrapper/>
+            <Navigation/>
+        </HeaderContentWrapper>
     </HeaderWrapper>
 )
 

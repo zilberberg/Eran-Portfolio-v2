@@ -1,11 +1,5 @@
 import styled from "styled-components"
 
-export const Header = styled.div`
-    font-size: ${props => props.theme.size.huge};
-    font-weight: ${props => props.theme.weight.extraBold};
-    text-transform: uppercase;
-`
-
 export const SubHeader = styled.div`
     font-size: ${props => props.theme.size.semiHuge};
     font-weight: ${props => props.theme.weight.bold};
@@ -23,3 +17,18 @@ export const Info = styled.div`
     font-weight: ${props => props.theme.weight.medium};
     display: block;
 `
+
+export const TitleWrapper = styled.div`
+    color: ${props => props.theme.colors.purple};
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+`
+
+export const TitleComponent = (props) => (
+    <TitleWrapper>
+        {`{${props.children}}`}
+    </TitleWrapper>
+)

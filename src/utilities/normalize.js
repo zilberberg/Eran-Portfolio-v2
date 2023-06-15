@@ -24,11 +24,6 @@ const normalize = css`
         overflow: visible;
     }
 
-    pre {
-        font-family: monospace, monospace;
-        font-size: 1em;
-    }
-
     a {
         background-color: transparent;
     }
@@ -46,10 +41,6 @@ const normalize = css`
 
     code,
     kbd,
-    samp {
-        font-family: monospace, monospace;
-        font-size: 1em;
-    }
 
     small {
         font-size: 80%;

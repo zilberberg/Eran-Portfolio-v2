@@ -7,25 +7,43 @@ const Navigation = () => (
         <NavItems>
             <Link activeClass="active" to="home" spy={true} smooth={true}>
                 <NavLink>
-                    HOME
+                    Home
                 </NavLink>
             </Link>
 
             <Link activeClass="active" to="about" spy={true} smooth={true}>
                 <NavLink>
-                    ABOUT
+                    About Me
+                </NavLink>
+            </Link>
+
+            <Link activeClass="active" to="skills" spy={true} smooth={true}>
+                <NavLink>
+                    Skills
+                </NavLink>
+            </Link>
+
+            <Link activeClass="active" to="experience" spy={true} smooth={true}>
+                <NavLink>
+                    Experience
                 </NavLink>
             </Link>
 
             <Link activeClass="active" to="projects" spy={true} smooth={true}>
                 <NavLink>
-                    PROJECTS
+                    Projects
                 </NavLink>
             </Link>
 
             <Link activeClass="active" to="contact" spy={true} smooth={true}>
                 <NavLink>
-                    CONTACT
+                    Contact
+                </NavLink>
+            </Link>
+
+            <Link activeClass="active" to="resume" spy={true} smooth={true}>
+                <NavLink>
+                    Resume
                 </NavLink>
             </Link>
         </NavItems>

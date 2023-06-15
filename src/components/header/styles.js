@@ -1,24 +1,31 @@
 import styled from "styled-components"
-import myImage from '../../images/Portfolio-cartoon.png';
+import Logo from '../../images/LOGO.svg'
+import Background from "../../images/header-background.png"
 
 export const HeaderWrapper = styled.div`
-    background-color: ${props => props.theme.colors.light};
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100px;
     z-index: 1500;
     display: flex;
-    padding: 30px 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+`
+
+export const HeaderContentWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    padding: 0px 160px;
+    align-items: center;
 `
 
 export const ImageWrapper = styled.div`
-    background-image: url(${myImage});
+    background-image: url(${Logo});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 30px;
+    z-index: 100;
 `
 
 export const NameWrapper = styled.div`
@@ -26,4 +33,15 @@ export const NameWrapper = styled.div`
     align-items: center;
     font-size: ${props => props.theme.size.extraLarge};
     padding-left: 20px;
+`
+
+export const BackgroundWrapper = styled.div`
+    background-image: url(${Background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
 `
