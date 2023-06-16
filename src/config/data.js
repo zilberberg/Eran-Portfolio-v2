@@ -43,3 +43,44 @@ export const PROJECTS = [
 
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/eran-zilberberg/";
 export const GITHUB_LINK = "https://github.com/zilberberg";
+
+export const EXPERIENCE_TIMELINE = [
+    {
+        position: "Full Stack Developer",
+        company: "Phytech",
+        location: "Kfar Saba, Israel",
+        dates: "2021 - present",
+        description: `
+            Full Stack Developer at a start-up focused on developing technology to help growers
+            manage and optimize production by keeping them connected to their plants.
+            Developed front-end web applications using ReactJS, utilizing yarn package manager and
+            webpack.
+            Worked as a back-end developer using Ruby on Rails and PostgreSQL.
+        `
+    },
+    {
+        position: "Android Developer",
+        company: "RenewSenses",
+        location: "Jerusalem, Israel",
+        dates: "2020",
+        description: `
+            Android Developer at a start-up dedicated to developing a smart cane for the visually
+            impaired, utilizing machine learning for real-time object detection.
+            Employed technologies such as Firebase, Tesseract for English and Hebrew OCR,
+            TensorFlow as a ML platform, and OpenCV for image manipulation.
+        `
+    },
+    {
+        position: "Full Stack Web Developer",
+        company: "SafeDK",
+        location: "Herzeliya, Israel",
+        dates: "2018 - 2019",
+        description: `
+            Full Stack Web Developer at a start-up focused on analyzing, monitoring, and optimizing
+            third-party SDKs.
+            Developed front-end applications using ReactJS, utilizing webpack, Babel, and npm.
+            Worked as a back-end developer using Ruby on Rails, with experience in PostgreSQL,
+            Elasticsearch, and AWS.
+        `
+    },
+]
