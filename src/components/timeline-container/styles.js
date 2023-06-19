@@ -1,3 +1,6 @@
+import { TimelineConnector, TimelineDot } from "@mui/lab"
+import styled from "styled-components"
+
 export const DatesStyle = {
     fontFamily: 'Roboto',
     fontStyle: 'normal',
@@ -29,3 +32,19 @@ export const DescriptionStyle = {
     fontSize: '20px',
     lineHeight: '24px',
 }
+
+export const CustomizedDot = styled(TimelineDot).attrs((props) => ({
+    sx: {
+        backgroundColor: props.theme.colors.dark
+    }
+}))`
+
+`
+
+export const CustomizedConnector = styled(TimelineConnector).attrs((props) => ({
+    sx: {
+        backgroundColor: props.theme.colors.dark
+    }
+}))`
+
+`

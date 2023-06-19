@@ -2,11 +2,9 @@ import React from "react"
 import Timeline from '@mui/lab/Timeline'
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem'
 import TimelineSeparator from '@mui/lab/TimelineSeparator'
-import TimelineConnector from '@mui/lab/TimelineConnector'
 import TimelineContent from '@mui/lab/TimelineContent'
-import TimelineDot from '@mui/lab/TimelineDot'
 import { Typography } from "@mui/material"
-import { CompanyStyle, DatesStyle, DescriptionStyle, PositionStyle } from "./styles"
+import { CompanyStyle, CustomizedConnector, CustomizedDot, DatesStyle, DescriptionStyle, PositionStyle } from "./styles"
 
 const TimelineContainer = (props) => (
     <Timeline
@@ -22,8 +20,8 @@ const TimelineContainer = (props) => (
                 return (
                     <TimelineItem key={index}>
                         <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
+                            <CustomizedDot/>
+                            <CustomizedConnector/>
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '8px', maxWidth: "300px" }}>
                             <Typography component="span" sx={DatesStyle}>
