@@ -84,3 +84,8 @@ export const EXPERIENCE_TIMELINE = [
         `
     },
 ]
+
+export const MAP_SETTINGS = {
+    center: {lat: 32.290925, lng: 34.853344},
+    zoom: 16
+}
