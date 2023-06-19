@@ -15,13 +15,10 @@ export const ProjectImageWrapper = styled.div`
 
 `
 
-export const ProjectImage = styled.div`
-    background-image: url(${props => props.src});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 700px;
-    height: 400px;
+export const ProjectImage = styled.img.attrs((props) => ({
+    src: props.src
+}))`
+    width: 600px;
 `
 
 export const ProjectInfoWrapper = styled.div`
@@ -47,8 +44,9 @@ export const ProjectLink = styled.a.attrs((props) => ({
 }))`
     background-color: ${props => props.theme.colors.purple};
     color: ${props => props.theme.colors.light};
-    padding: 4px 10px;
-    border-radius: 16px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 20px;
 `
 
 export const ProjectInfoTitle = styled.div`

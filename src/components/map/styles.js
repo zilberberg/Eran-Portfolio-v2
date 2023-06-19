@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const MapWrapper = styled.div`
-    justify-content: end;
+    justify-content: center;
     display: flex;
     align-items: center;
 `

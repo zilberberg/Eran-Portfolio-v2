@@ -6,7 +6,7 @@ import Github from "../../images/footer/github.svg";
 const Footer = () => (
     <FooterWrapper>
         <FooterHeader position={"start"}>
-            © 2021 Eran Zilberberg
+            © 2023 Eran Zilberberg
         </FooterHeader>
         <FooterHeader position={"center"}>
             Designed by Daniela Abramov

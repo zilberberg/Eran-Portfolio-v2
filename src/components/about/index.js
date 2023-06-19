@@ -1,11 +1,11 @@
 import React from "react"
-import { Info, InfoHeader, InfoSection, InfoSectionContent, SectionWrapper, TitleComponent } from "../../elements";
+import { Info, InfoHeader, InfoSection, SectionContent, SectionWrapper, TitleComponent } from "../../elements";
 import { AboutWrapper, ProfileImageBackgroundWrapper, ProfileImageContainer, ProfileImageWrapper } from "./styles";
 import theme from "../../config/theme";
 
 const About = () => (
     <SectionWrapper backgroundColor={theme.colors.lightBlue}>
-        <InfoSectionContent>
+        <SectionContent>
             <TitleComponent>
                 about me
             </TitleComponent>
@@ -32,7 +32,7 @@ const About = () => (
                     </ProfileImageContainer>
                 </InfoSection>
             </AboutWrapper>
-        </InfoSectionContent>
+        </SectionContent>
     </SectionWrapper>
 )
 
