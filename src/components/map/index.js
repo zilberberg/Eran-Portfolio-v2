@@ -6,7 +6,7 @@ import { MAP_SETTINGS } from "../../config/data";
 const Map = () => {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: process.env.MAP_API
+        googleMapsApiKey: process.env.REACT_APP_MAP_API
     })
 
     return (
